@@ -1,0 +1,28 @@
+{
+  "name": "project-2-collegeintern",
+  "version": "1.0.0",
+  "description": "Project 2 at FucntionUp, College Intern. Group No-22",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonuKumarYadav9/Project-2-CollegeIntern.git"
+  },
+  "keywords": [],
+  "author": "Deepesh Kumar, Deepak Singh, Sonu Kumar Yadav, Soumya Dutta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SonuKumarYadav9/Project-2-CollegeIntern/issues"
+  },
+  "homepage": "https://github.com/SonuKumarYadav9/Project-2-CollegeIntern#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.1",
+    "node-modules": "^1.0.1",
+    "nodemon": "^2.0.18",
+    "validator": "^13.7.0"
+  }
+}
