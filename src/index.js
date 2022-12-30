@@ -3,21 +3,26 @@ const express = require("express");
 const mongoose = require("mongoose");
 const route = require("./routes/route.js");
 const bodyParser = require("body-parser");
+const multer = require('multer')
 
 const app = express();
 app.use(bodyParser.json());
+app.use(multer().any());
+app.use("/functionup", route);
 
-mongoose
-  .connect(
-    "mongodb+srv://dkumardb:abngf_1996@cluster0.g7ksvc2.mongodb.net/project-2?retryWrites=true&w=majority",
+function start(){
+  mongoose.connect("mongodb+srv://soumya-db:afdbyZgt3CyQporD@cluster0.gvqtfzu.mongodb.net/Project2_OpenToIntern",
     {
       useNewUrlParser: true,
     }
   )
-  .then(() => console.log("Connected"))
+  .then(() => console.log("Connected with Database ✅✅✅"))
   .catch((err) => console.log(err));
 
-app.use("/", route);
+
 app.listen(process.env.PORT || 3000, function () {
   console.log("Express app running on port " + (process.env.PORT || 3000));
 });
+}
+
+start();
